@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>-ABM-</title>
+	<meta charset="utf-8">
+
+	<!-- CSS estilos -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/animaciones.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min-3.3.6.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="icon" href="img/ProgramIcon.ico">
+
+	<!-- Jquery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+	<!-- Funciones creadas -->
+	<script type="text/javascript" src="js/funcionesAjax.js"></script>
+	<script type="text/javascript" src="js/funcionesABM.js"></script>
+	<script type="text/javascript" src="js/funcionesLogueo.js"></script>
+
+</head>
+<body onload="CargaInicial()">
+	<div id="posicionPagina">
+		
+		<!--/*********************************************************MENU***************************************************/-->
+		<header id="header">
+
+			<!-- <hgroup>
+				<h3 id="cartel"></h3>
+			</hgroup> -->
+
+			<nav>
+				<!-- Menu principal --> 
+				<ul id="main-nav">
+					<li><a onclick="Mostrar('MostrarInicio')" class="btn btn-primary animated bounceInLeft">Inicio</a> </li>
+					<li><a onclick="Mostrar('MostrarGrilla')" class="btn btn-primary animated bounceInLeft">Grilla</a> </li>
+					<li><a onclick="Mostrar('MostrarPerfil')" class="btn btn-primary animated bounceInLeft">Mi Perfil</a> </li>
+					<li><a onclick="MostrarLogueo('MostrarLogIn')" class="btn btn-primary animated bounceInLeft-log" id="LogIn" ></a> </li>
+				</ul>
+			</nav>
+
+			<!-- Identificador de usuario --> 
+			<form id="identificador">
+				<input type="text" id="usuario" title="Usuario" readonly><!--Utilizado para buscar campos-->
+			</form>
+
+		</header>
+
+		<!--/*******************************************************CONTENIDO*************************************************/-->
+		<div id="content" class="contenido">
+
+
+		</div>
+
+		<!--/*****************************************************PIE DE PÁGINA***********************************************/-->
+		<footer id="footer">
+			
+			
+
+		</footer>
+
+	</div>
+</body>
+</html>
